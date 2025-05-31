@@ -17,3 +17,7 @@
   for = "/*.tsx"
     [headers.values]
       Content-Type = "application/javascript"
+
+[build]
+  command = "npm run build"
+  publish = "build"
