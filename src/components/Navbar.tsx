@@ -1,5 +1,6 @@
 import logo from '../assets/images/RojkoLogo.svg'
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 function Navbar() {
 
@@ -21,19 +22,20 @@ function Navbar() {
         <div className='header'>
             <nav className="navbar">
                 <ul className="sidebar" style={open}>
-                    <li onClick={() => sidebarSet(hideStyle)}><a href="#"><i className="fa-solid fa-x"></i></a></li>
-                    <li onClick={() => sidebarSet(hideStyle)}><a href="#about">About</a></li>
-                    <li onClick={() => sidebarSet(hideStyle)}><a href="#book">Book</a></li>
-                    <li onClick={() => sidebarSet(hideStyle)}><a href="#gallery">Gallery</a></li>
-                    <li onClick={() => sidebarSet(hideStyle)}><a href="#contacts">Contacts</a></li>
+                    <li onClick={() => sidebarSet(hideStyle)}><a><i className="fa-solid fa-x"></i></a></li>
+                    <li onClick={() => sidebarSet(hideStyle)}><Link to="/">Home</Link></li>
+                    <li onClick={() => sidebarSet(hideStyle)}><Link to="/about">About</Link></li>
+                    <li onClick={() => sidebarSet(hideStyle)}><Link to="/book">Book</Link></li>
+                    <li onClick={() => sidebarSet(hideStyle)}><Link to="/gallery">Gallery</Link></li>
+                    <li onClick={() => sidebarSet(hideStyle)}><Link to="/contact">Contact</Link></li>
                 </ul>
                 <ul>
-                    <li><a href="#"><img src={logo}></img></a></li>
-                    <li className="hideOnMobile"><a href="#about">About</a></li>
-                    <li className="hideOnMobile"><a href="#book">Book</a></li>
-                    <li className="hideOnMobile"><a href="#gallery">Gallery</a></li>
-                    <li className="hideOnMobile"><a href="#contacts">Contacts</a></li>
-                    <li className="menuBtn" onClick={() => sidebarSet(showStyle)}><a href="#"><i className="fa-solid fa-bars"></i></a></li>
+                    <li><Link to="/"><img src={logo}></img></Link></li>
+                    <li className="hideOnMobile"><Link to="/about">About</Link></li>
+                    <li className="hideOnMobile"><Link to="/book">Book</Link></li>
+                    <li className="hideOnMobile"><Link to="/gallery">Gallery</Link></li>
+                    <li className="hideOnMobile"><Link to="/contact">Contacts</Link></li>
+                    <li className="menuBtn" onClick={() => sidebarSet(showStyle)}><a><i className="fa-solid fa-bars"></i></a></li>
                 </ul>
             </nav>
         </div>
