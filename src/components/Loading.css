@@ -1,0 +1,24 @@
+.loading{
+    display: flex;
+    margin-top: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #ec4899;
+}
+
+p{
+    text-align: center;
+}
+
+img{
+    width: 200px;
+}
+
+@media(max-width: 800px){
+    .loading{
+        margin-top: 50%;
+    }
+}

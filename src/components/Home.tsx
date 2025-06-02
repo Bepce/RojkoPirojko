@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 
 function Home() {
   return (
@@ -12,12 +14,8 @@ function Home() {
             brings joy to birthdays, school events, and parties of all shapes and sizes.
           </p>
           <div className="hero-buttons">
-            <a href="#book" className="btn-primary">
-              🎈 Book Now
-            </a>
-            <a href="#gallery" className="btn-secondary">
-              📸 Watch the Fun
-            </a>
+            <Link to="/book" className='btn-primary'>🎈 Book Now</Link>
+            <Link to="/gallery" className='btn-secondary'>📸 Watch the Fun</Link>
           </div>
         </div>
       </section>
@@ -85,9 +83,7 @@ function Home() {
 
       <section className="cta-section">
         <h2 className="cta-title">Ready to Create Magical Memories?</h2>
-        <a href="#book" className="cta-button">
-          🎉 Let’s Get Started
-        </a>
+        <Link to="/book" className="cta-button">🎉 Let’s Get Started</Link>
       </section>
       </>
   );

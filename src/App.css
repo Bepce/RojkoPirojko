@@ -4,12 +4,6 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Fredoka One', cursive, sans-serif;
-}
-
-body::-webkit-scrollbar-track {
-  background-color: turquoise;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(224, 0, 150);
+  scroll-behavior: smooth;
+  height: 100%;
 }
