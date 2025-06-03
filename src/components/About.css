@@ -1,0 +1,145 @@
+.about-section {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.about-section-title{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #8b5cf6;
+  margin-bottom: 1rem;
+}
+
+.info-container{
+  display: flex;
+  column-gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+p{
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #374151;
+}
+
+@media (min-width: 800px){
+  .info-container{
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.about-img{
+  margin: auto;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: 30%;
+  background-image: url("../assets/images/RoshkoAbout.jpg");
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  flex-shrink: 0;
+  border: 0.5rem solid #ec4899;
+  border-radius: 50%;
+}
+
+@media (max-width: 500px){
+  .about-img{
+    max-width: none;
+    width: 100vw;
+    height: auto;
+    aspect-ratio: 16/9;
+    border: none;
+    border-radius: 0;
+    background-size: cover;
+    margin-left: calc(-50vw + 50%);
+    position: relative;
+    left: 0;
+}
+
+  .info-container{
+    flex-direction: column;
+  }
+}
+
+
+.info-card{
+  display: flex;
+  margin: auto;
+  max-width: 26rem;
+  text-align: center;
+}
+
+.info-card p{
+  padding: 1.5rem;
+}
+
+.about-service-section {
+  background-color: #ec4899;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.about-service-section-title{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.about-service-section .info-container .about-img{
+  border: 0.5rem solid #ffffff;
+  border-radius: 50%;
+}
+
+.about-service-section .info-container p{
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+@media (max-width: 500px){
+  .about-service-section .info-container .about-img{
+    border: none;
+    border-radius: 0;
+  }
+}
+
+.about-contact-section {
+  background-color: #ec4899;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.about-contact-section-title{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.about-contact-section .info-container p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.about-contact-section .info-container .about-img{
+  border: 0.5rem solid #ffffff;
+  border-radius: 50%;
+}
+
+@media (max-width: 500px){
+  .about-contact-section .info-container .about-img{
+    border: none;
+    border-radius: 0;
+  }
+}

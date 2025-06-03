@@ -3,11 +3,6 @@ import { lazy, Suspense } from "react";
 
 import Navbar from "./components/Navbar";
 import Loading from "./components/Loading";
-//import Home from "./components/Home";
-//import About from "./components/About";
-//import Book from "./components/Book";
-//import Gallery from "./components/Gallery";
-//import Contact from "./components/Contact";
 
 const Home = lazy(() => import ("./components/Home"))
 const About = lazy(() => import ("./components/About"))

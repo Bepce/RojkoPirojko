@@ -8,8 +8,8 @@ nav {
     font-family: 'Fredoka One', cursive, sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: #ec4899;
-    box-shadow: 3px 3px 5px black;
+    background-color: #ec489a00;
+    backdrop-filter: blur(5px);
 }
 
 nav ul {
@@ -34,6 +34,7 @@ nav a {
     height:  100%;
     padding: 0 30px;
     text-decoration: none;
+    font-size: 1.15rem;
     display: flex;
     align-items: center;
     color: black;
@@ -55,7 +56,7 @@ nav a img {
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: rgba(71, 255, 215, 0.308);
+    background-color: rgba(71, 255, 215, 0.808);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0,0,0,0,1);
     display: none;

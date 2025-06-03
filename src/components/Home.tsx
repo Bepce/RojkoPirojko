@@ -1,21 +1,20 @@
 import { Link } from "react-router-dom";
 
-
 function Home() {
   return (
     <>
     <section className="hero-section">
         <div className="hero-container">
           <h1 className="hero-title">
-            🎉 Where Giggles Grow and Imagination Takes Flight!
+            🎉 Където смехът расте и въображението лети 🎉
           </h1>
           <p className="hero-subtitle">
-            Magical moments, silly surprises, and unforgettable fun — <strong>[Your Name]</strong>
-            brings joy to birthdays, school events, and parties of all shapes and sizes.
+            Незабравими моменти и неспирна веселба — <strong>Рошко-Пирожко </strong>
+            ще направи рожденният ден, училищно събитие или парти незабравимо.
           </p>
           <div className="hero-buttons">
-            <Link to="/book" className='btn-primary'>🎈 Book Now</Link>
-            <Link to="/gallery" className='btn-secondary'>📸 Watch the Fun</Link>
+            <Link to="/book" className='btn-primary'>🎈 Резервирай</Link>
+            <Link to="/gallery" className='btn-secondary'>📸 Виж забавата</Link>
           </div>
         </div>
       </section>
@@ -23,39 +22,52 @@ function Home() {
       <section className="review-section">
         <div className="review-container">
           <h2 className="review-title">
-            💬 What Parents Are Saying
+            💬 Какво казват родителите
           </h2>
           <div className="review-grid">
             <div className="review-card">
               <p className="review-text">
-                "[Your Name] was absolutely amazing at our daughter’s party! The kids laughed non-stop and didn’t want it to end!"
+                "Най-добрият аниматор. Децата много се забавляваха, а ние заедно с тях. Професионалист, усмихнат, любезен. Препоръчвам и със сигурност ще е и на следващия му рожден ден!"
               </p>
-              <p className="review-author">– Sarah M.</p>
+              <p className="review-author">– Мария Ц.</p>
             </div>
             <div className="review-card">
               <p className="review-text">
-                "Such energy, creativity, and kindness. My son says it was the best birthday ever! Thank you for the magical memories."
+                "Препоръчвам с две ръце ! 
+Благодаря за якото парти ! Децата са във възторг!"
               </p>
-              <p className="review-author">– Jason T.</p>
+              <p className="review-author">– Симона С.</p>
+            </div>
+            <div className="review-card">
+              <p className="review-text">
+                "Забележително е как успя да накара всяко дете да се чувства специално и важно. Определено има дарба да създава незабравими спомени! Професионализмът, съчетан с искрена любов към работата с деца, си личеше във всеки един момент. Браво за невероятната енергия и всеотдайност!"
+              </p>
+              <p className="review-author">– Мария Д.</p>
+            </div>
+            <div className="review-card">
+              <p className="review-text">
+                "Препоръчвам с две ръце! Децата се забавлявяха на макс. Рошко-Пирожко прави уникални и запомнящи се детски партита и всеки път дава всичко от себе си!"
+              </p>
+              <p className="review-author">– Чудомира М.</p>
             </div>
           </div>
         </div>
       </section>
       <section className="services-section">
         <div className="section-container">
-          <h2 className="section-title">🎭 What I Offer</h2>
+          <h2 className="section-title">🎭 Какво предлагам</h2>
           <div className="service-grid">
             <div className="service-card">
-              <h3 className="service-title">🎈 Balloon Twisting</h3>
-              <p className="service-description">Wacky hats, silly swords, and animals that wiggle – all made on the spot!</p>
+              <h3 className="service-title">🎈 Моделиране на балони</h3>
+              <p className="service-description">Шапки, мечове, животни и др. - направени на място от мен, Рошко!</p>
             </div>
             <div className="service-card">
-              <h3 className="service-title">✨ Magic Shows</h3>
-              <p className="service-description">Interactive, hilarious, and full of surprises – perfect for any age group.</p>
+              <h3 className="service-title">🎶 Детска дискотека</h3>
+              <p className="service-description">Музикална забава подходяща за малчуганите. Пригответе се за ритмични танци и весели песнички!</p>
             </div>
             <div className="service-card">
-              <h3 className="service-title">🎤 Party Hosting</h3>
-              <p className="service-description">Games, music, and non-stop fun to keep the celebration rolling smoothly.</p>
+              <h3 className="service-title">🎂 Ритуал с торта</h3>
+              <p className="service-description">Нека този сладък ритуал бъде изпълнен с радост и много усмивки за нашия рожденик!</p>
             </div>
           </div>
         </div>
@@ -63,27 +75,27 @@ function Home() {
 
       <section className="faq-section">
         <div className="section-container">
-          <h2 className="section-title">❓ Frequently Asked Questions</h2>
+          <h2 className="section-title">❓ Често Задавани Въпроси</h2>
           <div className="faq-list">
             <div className="faq-item">
-              <h3 className="faq-question">What ages do you entertain?</h3>
-              <p className="faq-answer">I specialize in parties for children ages 3–10, but I can tailor fun for a variety of age groups!</p>
+              <h3 className="faq-question">За кого е подходящо?</h3>
+              <p className="faq-answer">Програмата е подходяща за деца от 4 до 12 годишна възраст.</p>
             </div>
             <div className="faq-item">
-              <h3 className="faq-question">How far in advance should we book?</h3>
-              <p className="faq-answer">The sooner the better! I recommend booking 4–6 weeks in advance, especially for weekends.</p>
+              <h3 className="faq-question">Кога е най-подходящо да ви резервирам?</h3>
+              <p className="faq-answer">Колкото по-рано, толкова по-добре! Препоръчвам ви да го направите поне 2 седмици предварително, особено когато става въпрос за Съобта или Неделя!</p>
             </div>
             <div className="faq-item">
-              <h3 className="faq-question">What if I need to cancel?</h3>
-              <p className="faq-answer">Life happens! I offer flexible rescheduling or cancellations with at least 72 hours notice.</p>
+              <h3 className="faq-question">Ако искам да откажа парти?</h3>
+              <p className="faq-answer">Всичко се случва! Затова предлагам насрочване за друга дата или отказ с 72 часово преизвестие.</p>
             </div>
           </div>
         </div>
       </section>
 
       <section className="cta-section">
-        <h2 className="cta-title">Ready to Create Magical Memories?</h2>
-        <Link to="/book" className="cta-button">🎉 Let’s Get Started</Link>
+        <h2 className="cta-title">Готови да Създадем Магически Спомени?</h2>
+        <Link to="/book" className="cta-button">🎉 Да Започваме</Link>
       </section>
       </>
   );
