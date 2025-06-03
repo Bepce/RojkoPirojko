@@ -1,0 +1,9 @@
+body{
+  background-image:  linear-gradient(to right, #f8f9fa 0%, #f1f5f9 50%, #ec4899 50%, #ec4899 100%);
+}
+
+@media (max-width: 800px) {
+  body {
+    background-image: linear-gradient(to bottom, #f8f9fa 0%, #f1f5f9 50%, #ec4899 50%, #ec4899 100%);
+  }
+}

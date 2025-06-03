@@ -1,6 +1,13 @@
 function Book(){
     return(
-        <h1>Hello Book page</h1>
+        <>
+        <div className="book-info">
+
+        </div>
+        <div className="book-call">
+            <p>Телефон за връзка: 0888 123 456</p>
+        </div>
+        </>
     )
 }
 

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 function Home() {
+  window.scrollTo({ top: 0, left: 0, behavior: `instant` });
   return (
     <>
     <section className="hero-section">

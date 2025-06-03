@@ -1,6 +1,7 @@
 
 
 function About(){
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     return (
     <>
     <section className="about-section">
